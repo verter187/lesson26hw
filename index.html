@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="total">
+          <div class="total_done">Сделано 0</div>
+          <div class="total_canceled">Отменено 0</div>
+        </div>
+
+        <form id="form_addcard">
+          <div class="title">Добавить новое дело</div>
+          <input name="name" required placeholder="Название" />
+
+          <input name="mark" required placeholder="Пометки" />
+
+          <button>добавить</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <div id="cards" class="container"></div>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
