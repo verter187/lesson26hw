@@ -15,7 +15,10 @@ function addTaskCard(event) {
 	const fields = ['name', 'mark'],
 		task = {};
 
-	fields.forEach(field => task[field] = event.target[field].value);
+	fields.forEach(field => {
+		task[field] = event.target[field].value;
+		event.target[field].value = '';
+	});
 
 	task.status = '';
 	task.id = 'card' + randomID();
